@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển feet to meter </title>
+</head>
+
+<body>
+<table>
+    <tr>
+        <td>Meter</td>
+        <td>Feet</td>
+        <td></td>
+        <td>Feet</td>
+        <td>Meter</td>
+
+    </tr>
+    <tr>
+        <td><input  id="meters" type="text" value="" name="Meter"></td>
+        <td><p id="feets" type="text" value="" name="Feet"></p></td>
+        <td><input type="button" value="result" onclick="meterToFoot()"></td>
+        <td><input  id="feets2" type="text" value="" name="Meter2"></td>
+        <td><p id="meters2" type="text" value="" name="Feet2"></p></td>
+        <td><input type="button" value="result2" onclick="footToMeter()" ></td>
+    </tr>
+</table>
+
+<script>
+    function meterToFoot(meter) {
+       var meter = +document.getElementById('meters').value;
+        b = meter * 3.279;
+        document.getElementById('feets').innerHTML = b;
+    }
+    function footToMeter(foot) {
+        var foot = +document.getElementById('feets2').value;
+        c = 0.305 * foot
+        document.getElementById('meters2').innerHTML = c;
+    }
+
+
+
+</script>
+
+</body>
+</html>
